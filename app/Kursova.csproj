@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Add_windows\Знімок екрана 2024-05-26 135830 %28Користувацькі%29.png" />
+    <None Remove="Images\car %28Користувацькі%29.png" />
+    <None Remove="Images\search %28Користувацькі%29.png" />
+    <None Remove="Images\Знімок екрана 2024-04-01 141751 %28Користувацькі%29.png" />
+    <None Remove="Images\Знімок екрана 2024-04-03 152821 %28Користувацькі%29.png" />
+    <None Remove="key-icon.png" />
+    <None Remove="user-icon.png" />
+    <None Remove="View_Layer\car %28Користувацькі%29.png" />
+    <None Remove="View_Layer\search %28Користувацькі%29.png" />
+    <None Remove="View_Layer\Знімок екрана 2024-04-01 141751 %28Користувацькі%29.png" />
+    <None Remove="View_Layer\Знімок екрана 2024-04-03 150351 %28Користувацькі%29.png" />
+    <None Remove="View_Layer\Знімок екрана 2024-04-03 152821 %28Користувацькі%29.png" />
+    <None Remove="Знімок екрана 2024-04-01 141751 %28Користувацькі%29.png" />
+    <None Remove="Знімок екрана 2024-04-01 141751 %28Маленькі%29.png" />
+    <None Remove="Знімок екрана 2024-04-01 141751 %28Середня%29.png" />
+    <None Remove="Знімок екрана 2024-04-01 141751.png" />
+    <None Remove="Знімок екрана 2024-04-01 151250 %28Користувацькі%29.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocX" Version="3.0.0" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1004" />
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+    <PackageReference Include="MySqlConnector" Version="2.3.6" />
+    <PackageReference Include="Spire.Doc" Version="12.4.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Add_windows\Знімок екрана 2024-05-26 135830 (Користувацькі).png" />
+    <Resource Include="Images\car (Користувацькі).png" />
+    <Resource Include="Images\key-icon.png" />
+    <Resource Include="Images\search (Користувацькі).png" />
+    <Resource Include="Images\user-icon.png" />
+    <Resource Include="Images\Знімок екрана 2024-04-01 141751 (Користувацькі).png" />
+    <Resource Include="Images\Знімок екрана 2024-04-03 152821 (Користувацькі).png" />
+  </ItemGroup>
+
+</Project>
