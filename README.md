@@ -49,7 +49,7 @@ Before building the project, ensure you have:
 * MySQL Workbench
 
 ## 🔧 Build & Setup Instructions
-### 1. Download folder "app" and "database"
+### 1. Download folder `app` and `database`
 ### 2. Database Setup(MySQL Workbench)
 Execute the SQL scripts provided in the `database/` folder to create the schema and tables:
 1. Run `CompanyDB.sql` to create the structure.
@@ -66,7 +66,7 @@ INSERT INTO Users (username, password, role) VALUES
 ('consultant', 'user123', 'Sales Consultant');
 ```
 ### 3. Configure Connection
-Update the connection string in the Helper->DBHelper.cs file to match your local MySQL credentials:
+Update the connection string in the `Helper`->`DBHelper.cs` file to match your local MySQL credentials:
 ```C#
 builder.Server = "127.0.0.1";
 builder.UserID = "root";
