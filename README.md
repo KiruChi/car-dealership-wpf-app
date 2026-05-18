@@ -49,11 +49,13 @@ Before building the project, ensure you have:
 * MySQL Workbench
 
 ## 🔧 Build & Setup Instructions
-### 1. Database Setup
-Execute the SQL script "CompanyDB" (provided in the `database/` folder) to create the schema and tables.
-(Oprional) You can use CompanyDB(2) to fill tables with test data.
+### 1. Download folder "app" and "database"
+### 2. Database Setup(MySQL Workbench)
+Execute the SQL scripts provided in the `database/` folder to create the schema and tables:
+1. Run `CompanyDB.sql` to create the structure.
+2. (Optional) Run `CompanyDB(2).sql` to fill the tables with test data.
 
-The database is named: `Company_DB`.
+The database name will be: `Company_DB`.
 
 **Insert test users for authentication:**
 ```sql
@@ -63,12 +65,15 @@ INSERT INTO Users (username, password, role) VALUES
 ('admin', 'admin123', 'Administrator'),
 ('consultant', 'user123', 'Sales Consultant');
 ```
-### 2. Configure Connection
-Update the connection string in the DBHelper.cs file to match your local MySQL credentials:
+### 3. Configure Connection
+Update the connection string in the Helper->DBHelper.cs file to match your local MySQL credentials:
 ```C#
 builder.Server = "127.0.0.1";
 builder.UserID = "root";
-builder.Password = "TYREN458srcetr"; // This should be your password to your MySQL connection
+builder.Password = "YOUR_PASSWORD"; // This should be your password to your MySQL connection
 ```
 
-### 3. Build and Run
+### 4. Build and Run(Visual Studio 2022)
+1. Open the solution file Kursova.sln in Visual Studio 2022.
+2. Build the solution (Ctrl + Shift + B).
+3. Press F5 to start the application.
