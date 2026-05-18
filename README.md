@@ -64,8 +64,8 @@ INSERT INTO Users (username, password, role) VALUES
 ('consultant', 'user123', 'Sales Consultant');
 ```
 ### 2. Configure Connection
-Update the connection string in the App.config file to match your local MySQL credentials:
-```C++
+Update the connection string in the DBHelper.cs file to match your local MySQL credentials:
+```C#
 builder.Server = "127.0.0.1";
 builder.UserID = "root";
 builder.Password = "TYREN458srcetr"; // This should be your password to your MySQL connection
